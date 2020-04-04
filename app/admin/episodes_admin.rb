@@ -3,24 +3,32 @@ Trestle.resource(:episodes) do
     item :episodes, icon: "fa fa-star"
   end
 
-  # Customize the table columns shown on the index view.
-  #
-  # table do
-  #   column :name
-  #   column :created_at, align: :center
-  #   actions
+  # Define custom scopes for the index view
+  # scopes do
+  #  scope :all, default: true
+  #  scope :published
+  #  scope :drafts, -> { Episode.unpublished }
   # end
 
+  # Customize the table columns shown on the index view.  #
+  table do
+    column :title, link: true
+    column :updated_at, align: :center
+    column :created_at, align: :center
+    actions
+  end
+
   # Customize the form fields shown on the new/edit views.
-  #
-  # form do |episode|
-  #   text_field :name
-  #
-  #   row do
-  #     col { datetime_field :updated_at }
-  #     col { datetime_field :created_at }
-  #   end
-  # end
+  form do |episode|
+    text_field :title
+    text_field :description
+    editor :content
+
+    row do
+      col { datetime_field :updated_at }
+      col { datetime_field :created_at }
+    end
+  end
 
   # By default, all parameters passed to the update and create actions will be
   # permitted. If you do not have full trust in your users, you should explicitly
