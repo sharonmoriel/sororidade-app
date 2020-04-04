@@ -15,6 +15,8 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'trestle'
+gem 'trestle-tinymce', '~> 0.2.0'
+gem 'trestle-auth'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
