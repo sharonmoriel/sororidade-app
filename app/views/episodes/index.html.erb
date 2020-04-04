@@ -1,0 +1,8 @@
+<h1>List of Episodes</h1>
+
+<ul>
+  <% @episodes.each do |episode| %>
+    <li><%= episode.title %></li>
+    <p><%= episode.description %></p>
+  <% end %>
+</ul>
