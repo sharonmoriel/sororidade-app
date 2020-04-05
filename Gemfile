@@ -17,6 +17,7 @@ gem 'webpacker'
 gem 'trestle'
 gem 'trestle-tinymce', '~> 0.2.0'
 gem 'trestle-auth'
+gem 'carrierwave', '~> 2.0'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
