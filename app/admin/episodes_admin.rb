@@ -23,7 +23,7 @@ Trestle.resource(:episodes) do
     text_field :title
     text_field :description
     editor :content
-    file_field :video
+    file_field :video, id: :episode_video
 
     row do
       col { datetime_field :updated_at }
