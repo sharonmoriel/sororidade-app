@@ -23,12 +23,20 @@ Trestle.resource(:episodes) do
     text_field :title
     text_field :description
     editor :content
+    file_field :video, id: :episode_video
 
     row do
       col { datetime_field :updated_at }
       col { datetime_field :created_at }
     end
+
+    unless episode.new_record?
+      concat content_tag(:hr)
+      concat link_to("Preview", Rails.application.routes.url_helpers.episode_path(episode), class: "btn btn-block btn-primary", target: :_blank)
+    end
   end
+
+
 
   # By default, all parameters passed to the update and create actions will be
   # permitted. If you do not have full trust in your users, you should explicitly

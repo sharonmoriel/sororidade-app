@@ -1,2 +1,8 @@
 <h1><%= @episode.title %></h1>
 <p><%= @episode.description %></p>
+<%= sanitize @episode.content %>
+
+<video width="320" height="240" controls>
+  <source src="<%= @episode.video %>" type="video/mp4">
+</video>
+
