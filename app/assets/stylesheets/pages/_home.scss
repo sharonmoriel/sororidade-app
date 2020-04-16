@@ -1,6 +1,50 @@
 // Specific CSS for your home-page
-.caixa {
-  width: 100px;
-  background-color: blue;
 
+.wrapper {
+ width: 960px;
+ margin: 0 auto;
 }
+.manifest {
+  margin: 100px auto;
+
+//  h1  {
+//   text-align: center;
+//   margin-top: 40px;
+//   margin: 40px;
+//   font-size: 40px;
+// }
+
+p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+span{
+  font-size: 30px;
+}
+}
+
+.about-us {
+
+  h2 {
+    text-align: center;
+    margin: 40px;
+    font-size: 30px;
+  }
+}
+
+
+.profile {
+
+  .photo-1 {
+    width: 100%;
+    height: auto;
+  }
+
+  p {
+    text-align: justify;
+    margin-top: 32px;
+    font-size: 15px;
+  }
+}
+
