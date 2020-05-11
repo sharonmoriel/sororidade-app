@@ -1,50 +1,72 @@
 // Specific CSS for your home-page
 
+body {
+  background-color: white;
+}
 .wrapper {
- width: 960px;
+ max-width: 800px;
+ width:100%;
  margin: 0 auto;
 }
 .manifest {
-  margin: 100px auto;
-
-//  h1  {
-//   text-align: center;
-//   margin-top: 40px;
-//   margin: 40px;
-//   font-size: 40px;
-// }
-
-p {
+  margin: 64px auto;
   text-align: justify;
-  font-size: 20px;
-}
 
-span{
-  font-size: 30px;
-}
+  p {
+    text-align: justify;
+    font-size: 20px;
+  }
+
+  span{
+    font-size: 30px;
+    font-weight: 700;
+  }
 }
 
 .about-us {
-
+  margin: 32px auto;
   h2 {
     text-align: center;
     margin: 40px;
     font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
   }
 }
 
-
 .profile {
-
   .photo-1 {
     width: 100%;
     height: auto;
+
   }
 
   p {
     text-align: justify;
     margin-top: 32px;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  a {
+    text-decoration: none;
+    color:#B2677D;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 20px;
   }
 }
 
