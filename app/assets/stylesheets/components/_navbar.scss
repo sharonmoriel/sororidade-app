@@ -3,15 +3,17 @@
  background: #1f1f1f;
 
  .navbar-brand {
-  color: #C54F71;
-  letter-spacing: 2px;
+  color: #B2677D;
+  font-family: 'PT Sans';
+  letter-spacing: 5px;
   display: grid;
   font-size: 24px;
   font-weight: 700;
+  text-align: center;
 
   span {
     font-size: 14px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 
   }
 }
@@ -37,8 +39,8 @@
   padding:0;
   outline: none;
 
-
   li {
+    font-size: 18px;
     display: inline;
     &:first-child{
       margin-right: 20px;
@@ -46,11 +48,17 @@
     &:last-child {
       margin-left: 20px;
     }
+
+    :hover {
+      color: #B2677D;
+    }
   }
 
   a {
     color:white;
     text-decoration: none;
+
+
   }
 }
 

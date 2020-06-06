@@ -1,5 +1,9 @@
 // Specific CSS for your home-page
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: white;
 }
@@ -20,12 +24,16 @@ body {
   span{
     font-size: 30px;
     font-weight: 700;
+    color: #B2677D;
+    text-transform: uppercase;
   }
 }
 
 .about-us {
   margin: 32px auto;
+  padding-top: 85px;
   h2 {
+    color: #B2677D;
     text-align: center;
     margin: 40px;
     font-size: 30px;
@@ -33,13 +41,15 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
+    margin-top: 10px;
   }
 }
 
 .profile {
   .photo-1 {
     width: 100%;
-    height: auto;
+    height: 210px;
+    object-fit: cover;
 
   }
 
@@ -60,6 +70,22 @@ body {
     letter-spacing: 2px;
     font-size: 14px;
 
+  }
+}
+
+.scrolllUp {
+  text-align: right;
+  padding: 20px;
+  margin-left: 20px;
+  a {
+    text-decoration: none;
+    color: #B2677D;
+    :hover {
+      color: #842B45;
+    }
+  }
+  .fas {
+    font-size: 40px;
   }
 }
 
