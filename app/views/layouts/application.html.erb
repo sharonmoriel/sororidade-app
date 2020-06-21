@@ -14,9 +14,11 @@
 
 <body>
 
-  <%= render 'shared/navbar'%>
+    <%= render 'shared/navbar'%>
 
-  <%= render 'shared/banner'%>
+    <% unless controller_name == "landing" %>
+      <%= render 'shared/banner'%>
+    <% end %>
 
   <%= yield %>
 

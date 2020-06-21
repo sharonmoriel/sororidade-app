@@ -4,30 +4,31 @@
 
 
     <a class="navbar-brand" href="#">SORORIDADE <br><span> Inspire to Empower</span></a>
+    
+    <% unless controller_name == "landing" %>
+      <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon custom-toggler"></span> -->
+        <span class="fas fa-bars"></span>
+      </button>
 
-    <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-      <!-- <span class="navbar-toggler-icon custom-toggler"></span> -->
-      <span class="fas fa-bars"></span>
-    </button>
+      <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+          <ul class="navbar-nav  mx-auto justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link">Episodes</a>
+            </li>
 
-    <div class="collapse navbar-collapse" id="bs-navbar-collapse">
-      <ul class="navbar-nav  mx-auto justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link">Episodes</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="/#aboutUs">About Us</a>
-        </li>
-      </ul>
-      <ul class="navbar-social">
-        <li><a href="#" class="fab fa-instagram"></a></li>
-        <li><a href="#" class="fab fa-youtube"></a></li>
-        <li><a href="#" class="fab fa-linkedin"></a></li>
-      </ul>
-    </div>
-
-  </div>
+            <li class="nav-item">
+              <a class="nav-link" href="/#aboutUs">About Us</a>
+            </li>
+          </ul>
+          <ul class="navbar-social">
+          <li><a href="#" class="fab fa-instagram"></a></li>
+          <li><a href="#" class="fab fa-youtube"></a></li>
+          <li><a href="#" class="fab fa-linkedin"></a></li>
+          </ul>
+        </div>
+      </div>
+    <% end %>
 
 </nav>
 

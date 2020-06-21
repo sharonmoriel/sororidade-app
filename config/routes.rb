@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
   resources :episodes
 
-  get 'landingpage', to: 'pages#landingpage'
+  get 'landingpage', to: 'landing#landingpage'
 end
