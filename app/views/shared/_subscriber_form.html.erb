@@ -1,0 +1,4 @@
+<%= simple_form_for @subscriber, url: landing_path, validate: true do |f| %>
+  <%= f.input :email %>
+  <%= f.button :submit, class: 'btn btn-primary' %>
+<% end %>
