@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # temporary commented becuase is not used
   # resources :episodes
 
-  resources :landing, only: [:index, :create]
+  # resources :landing, only: [:index, :create]
 
   # get 'landingpage', to: 'landing#index'
 
