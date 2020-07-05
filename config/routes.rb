@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'pages#home'
+  root to: 'landing#index'
 
   # temporary commented becuase is not used
   # resources :episodes
