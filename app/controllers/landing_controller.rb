@@ -1,15 +1,22 @@
 class LandingController < ApplicationController
-  def landing
+  def index
     @subscriber = Subscriber.new
   end
 
+  # def new
+  #   @subscriber = Subscriber.new
+  # end
 
-  def add_subscriber
+  def create
     @subscriber = Subscriber.new(subscriber_params)
     if @subscriber.save
-
+      Swal.fire(
+        'Good job!',
+        'You clicked the button!',
+        'success'
+      )
     else
-      render :landing
+      render :index
     end
   end
 

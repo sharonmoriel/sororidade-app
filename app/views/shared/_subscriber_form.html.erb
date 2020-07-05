@@ -1,4 +1,7 @@
-<%= simple_form_for @subscriber, url: landing_path, validate: true do |f| %>
+<div class="signup">
+  <p> Sign up and we will let you know when the stories are online.</p>
+</div>
+<%= simple_form_for @subscriber, url: landing_index_path, validate: true do |f| %>
   <%= f.input :email %>
   <%= f.button :submit, class: 'btn btn-primary' %>
 <% end %>
